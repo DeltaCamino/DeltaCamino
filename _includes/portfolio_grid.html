@@ -18,7 +18,8 @@
                                 <i class="fa fa-folder-open fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ post.url | prepend: site.baseurl}}{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        <img src="{{ post.url | remove: "index.html" | prepend: site.baseurl}}{{ post.thumbnail }}"
+                         class="img-responsive img-centered" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
