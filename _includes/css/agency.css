@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Rajdhani",Helvetica,sans-serif;
     color: #{{ site.color.secondary-dark }};
 }
 
@@ -39,10 +39,7 @@ a {
     color: #{{ site.color.primary }};
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
+a:hover {
     color: #{{ site.color.secondary }};
 }
 
@@ -170,13 +167,17 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.logo-img {
+  height: 60px;
+}
+
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #{{ site.color.secondary-dark }};
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    padding: 0;
     color: #{{ site.color.primary }};
 }
 
@@ -213,8 +214,7 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
     color: #{{ site.color.primary }};
 }
@@ -242,6 +242,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
+        padding: 0;
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -277,37 +278,37 @@ header {
 
 header .intro-text {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 400px;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: #{{ site.color.primary }};
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
+    font-size: 18pt;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 27px;
 }
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 160px;
+        padding-bottom: 500px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
 
@@ -315,14 +316,14 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
+        font-size: 60px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 90px;
     }
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 section h2.section-heading {
@@ -334,7 +335,6 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -342,7 +342,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -371,8 +371,8 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
+    background: rgba(254,209,54,.7); /* Fallback when no plugin support */
+    background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .7);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -414,9 +414,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 18px;
 }
 
 #portfolio * {
@@ -653,87 +651,18 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #222;
-    background-image: url(img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-section#contact .section-heading {
-    color: #fff;
-}
-
-section#contact .form-group {
-    margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 236px;
-}
-
-section#contact .form-control:focus {
-    border-color: #{{ site.color.primary }};
-    box-shadow: none;
-}
-
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact .text-danger {
-    color: #e74c3c;
-}
-
 footer {
     padding: 25px 0;
     text-align: center;
 }
 
 footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+    font-size: 14px;
 }
 
 footer ul.quicklinks {
     margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
@@ -792,7 +721,6 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -817,7 +745,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .3;
+    opacity: .2;
 }
 
 .portfolio-modal .close-modal .lr {

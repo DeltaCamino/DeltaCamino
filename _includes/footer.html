@@ -1,25 +1,24 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} 2014</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+                <span class="copyright">Copyright &copy; Damian Fijorek 2015</span><br/>
+                {% if (page.url == "/") %}
+                <span class="copyright">
+                  <a href="https://www.flickr.com/photos/deep_sidhu/9434208729/">As vibrant as it can be..</a>
+                  by Vikramdeep Sidhu /
+                  <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+                </span>
+                {% endif %}
+            </div>
+            <div>
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
