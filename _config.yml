@@ -21,14 +21,18 @@ color:
 # Team names, titles and social links
 people:
 - name: Marcin Wach
-  pic: 0
-  position: Realizacje
+  pic: 1
+  position: Prezes spółki
+  resp: Realizacje
+  phone: 733 049 350
 - name: Jerzy Nowak
-  pic: 0
-  position: Projektowanie i doradztwo techniczne
+  pic: 2
+  position: Wspólnik
+  resp: Projektowanie i doradztwo techniczne
 - name: Damian Fijorek
   pic: 3
-  position: Projektowanie i weryfikacja
+  position: Wspólnik
+  resp: Projektowanie i weryfikacja
   social:
     - title: linkedin
       url: https://pl.linkedin.com/in/damian-fijorek-02352161
