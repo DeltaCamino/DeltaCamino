@@ -7,6 +7,20 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
+<!-- Plugin Galleria -->
+<script src="{{ "/galleria/galleria-1.4.2.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/galleria/plugins/picasa/galleria.picasa.min.js" | prepend: site.baseurl }}"></script>
+<script>
+  Galleria.loadTheme('{{ "/galleria/themes/galleria-classicmod/galleria.classicmod.js" | prepend: site.baseurl }}');
+  Galleria.run('#galleria', {
+      height: 0.64,
+      picasa: 'useralbum:107417368064494998900/Galeria',
+      picasaOptions: {
+          sort: 'date-posted-asc'
+      }
+  });
+</script>
+
 <!-- Plugin JavaScript -->
 <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>

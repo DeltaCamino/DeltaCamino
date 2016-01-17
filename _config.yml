@@ -2,9 +2,9 @@ url: http://damianfijorek.github.io
 baseurl: /delta-camino-site
 
 # Site settings
-title: delta camino
-email: damianfijorek@gmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: deltacamino
+email: biuro@deltacamino.pl
+description: "Cieczowe tłumiki drgań stalowych kominów przemysłowych - obniżenie kosztów inwestycji i eksploatacji przez redukcję drgań poprzecznych od wzbudzenia wirowego wywołanego oddziaływaniem wiatru. Weryfikacja skuteczności tłumienia z wykorzystaniem aparatury do pomiaru drgań."
 collections:
   - realizations
 
@@ -24,19 +24,17 @@ people:
   pic: 1
   position: Prezes spółki
   resp: Realizacje
-  phone: 733 049 350
+  email: marcin.wach@deltacamino.pl
 - name: Jerzy Nowak
   pic: 2
   position: Wspólnik
   resp: Projektowanie i doradztwo techniczne
+  email: jerzy.nowak@deltacamino.pl
 - name: Damian Fijorek
   pic: 3
   position: Wspólnik
   resp: Projektowanie i weryfikacja
-  social:
-    - title: linkedin
-      url: https://pl.linkedin.com/in/damian-fijorek-02352161
-  phone: 885 516 067
+  email: damian.fijorek@deltacamino.pl
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
